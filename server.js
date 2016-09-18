@@ -14,14 +14,14 @@ app.get('/article one',function(req,res) {
 });
 
 app.get('/article two',function(req,res) {
-    res.sendfile("article two is requested and will display here");
+    res.send("article two is requested and will display here");
 });
 
 app.get('/article three',function(req,res) {
-    res.sendfile("article three is requested and will display here");
+    res.send("article three is requested and will display here");
 });
 app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+  res.send(path.join(__dirname, 'ui', 'style.css'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
